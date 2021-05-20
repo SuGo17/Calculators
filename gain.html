@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gain Calculator</title>
+    <link rel="stylesheet" href="./intrensic.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="gain-title title">Gain Calculator</h1>
+    <section class="gain-calculator">
+      <div class="box gain-box">
+        <form action="">
+          <div class="gain-form-box">
+            <label for="g-ba" class="g-ba">
+              Buy Amount: <span>*</span>
+            </label>
+            <input type="number" id="g-ba" placeholder="Ex: ₹5000" />
+          </div>
+          <div class="gain-form-box">
+            <label for="g-sa" class="g-sa">
+              Sell Ammount: <span>*</span>
+            </label>
+            <input type="number" id="g-sa" placeholder="Ex: ₹5050" />
+          </div>
+        </form>
+        <div class="btns">
+          <button class="btn btn-gain-calculate">Calculate</button>
+          <button class="btn btn-gain-reset">Reset</button>
+        </div>
+      </div>
+      <div class="box gain-result">
+        <p class="gain-buy-value g-p">Buy Value: <span></span></p>
+        <p class="gain-sell-value g-p">sell Value: <span></span></p>
+        <p class="gain-earnings g-p">Total Earnings: <span></span></p>
+        <p class="gain-percent g-p">
+          Profit Percentage: <span></span>
+        </p>
+        <span class="gain-result-span"></span>
+      </div>
+    </section>
+    <script src="./gain.js"></script>
+  </body>
+</html>

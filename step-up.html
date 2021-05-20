@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Up Calculator</title>
+    <link rel="stylesheet" href="./intrensic.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="lumpsum-title title">Step Up Calculator</h1>
+    <section class="lumpsum-calculator">
+      <div class="box lumpsum-box">
+        <form action="">
+          <div class="lumpsum-form-box">
+            <label for="su-ia" class="l-ia">
+              Investment Amount: <span>*</span>
+            </label>
+            <input type="number" id="su-ia" placeholder="Ex: ₹5000" />
+          </div>
+          <div class="lumpsum-form-box">
+            <label for="su-incr" class="l-return">
+              Growth in Investment Amount(P.A): <span>*</span>
+            </label>
+            <input type="number" id="su-incr" placeholder="Ex: 10%" />
+          </div>
+          <div class="lumpsum-form-box">
+            <label for="su-return" class="l-return">
+              Expected Rate of Return (P.A): <span>*</span>
+            </label>
+            <input type="number" id="su-return" placeholder="Ex: 15%" />
+          </div>
+          <div class="lumpsum-form-box">
+            <label for="su-tenure" class="l-tenure">
+              Tenure: <span>*</span>
+            </label>
+            <input type="number" id="su-tenure" placeholder="Ex: 5 Years" />
+          </div>
+        </form>
+        <div class="btns">
+          <button class="btn btn-step-up-calculate">Plan My Future</button>
+          <button class="btn btn-step-up-reset">Reset</button>
+        </div>
+      </div>
+      <div class="box lumpsum-result">
+        <p class="step-up-value l-p">Your Corpus Value: <span></span></p>
+        <p class="step-up-earnings l-p">Total Earnings: <span></span></p>
+        <p class="step-up-invested l-p">
+          Total Deposited Amount: <span></span>
+        </p>
+        <span class="step-up-result-span"></span>
+      </div>
+    </section>
+    <script src="./step-up.js"></script>
+  </body>
+</html>

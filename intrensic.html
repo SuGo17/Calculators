@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intrensic Calculator</title>
+    <link rel="stylesheet" href="./intrensic.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="intrensic-title title">Intrensic Value Calculator</h1>
+    <section class="intrensic-calculator">
+      <div class="box intrensic-box">
+        <form action="">
+          <div class="intrensic-form-box">
+            <label for="i-eps" class="i-eps">EPS: <span>*</span> </label>
+            <input
+              type="number"
+              placeholder="Ex: 5.65"
+              autocomplete="off"
+              id="i-eps"
+            />
+          </div>
+          <div class="intrensic-form-box">
+            <label for="i-growth" class="i-growth"
+              >Growth Rate: <span>*</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Ex: 12.56%"
+              autocomplete="off"
+              id="i-growth"
+            />
+          </div>
+          <div class="intrensic-form-box">
+            <label for="i-return" class="i-return">
+              Expected Rate of Return(P.A): <span>*</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Ex: 15%"
+              autocomplete="off"
+              id="i-return"
+            />
+          </div>
+          <div class="intrensic-form-box">
+            <label for="i-pe" class="i-pe">P/E: <span>*</span></label>
+            <input
+              type="number"
+              placeholder="Ex: 25.68"
+              autocomplete="off"
+              id="i-pe"
+            />
+          </div>
+          <div class="intrensic-form-box">
+            <label for="i-mos" class="i-mos"
+              >Margin of Safety: <span>*</span></label
+            >
+            <input
+              type="number"
+              placeholder="Ex: 50%"
+              autocomplete="off"
+              id="i-mos"
+            />
+          </div>
+          <div class="intrensic-form-box">
+            <label for="i-tenure" class="i-tenure">
+              Tenure(In Years): <span>*</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Ex: 10"
+              autocomplete="off"
+              id="i-tenure"
+            />
+          </div>
+        </form>
+        <div class="btns">
+          <button class="btn btn-intrensic-calculate">Calculate</button>
+          <button class="btn btn-intrensic-reset">Reset</button>
+        </div>
+      </div>
+      <div class="box intrensic-result">
+        <p class="intrensic-label">Intrensic Value:</p>
+        <p class="intrensic-value"></p>
+      </div>
+    </section>
+    <script src="./intrensic.js"></script>
+  </body>
+</html>

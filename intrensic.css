@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 2rem 5rem;
+}
+.intrensic-title,
+.lumpsum-title,
+.sip-title,.gain-title {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.title::after {
+  content: " ";
+  position: absolute;
+  width: 20rem;
+  height: 0.25rem;
+  background: #00d391;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.intrensic-calculator,
+.lumpsum-calculator,
+.sip-calculator,.gain-calculator {
+  display: flex;
+  height: 80vh;
+}
+.intrensic-box,
+.lumpsum-box,
+.sip-box,.gain-box {
+  padding: 3rem;
+  width: 40%;
+}
+.intrensic-form-box,
+.lumpsum-form-box,
+.sip-form-box,.gain-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.lumpsum-box form,.gain-box form {
+  margin-top: 10rem;
+}
+.sip-box form {
+  margin-top: 7rem;
+}
+.intrensic-form-box input,
+.lumpsum-form-box input,
+.sip-form-box input,
+.sip-form-box select,.gain-form-box input {
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid rgba(90, 90, 90, 0.637);
+}
+
+.sip-form-box select {
+  height: 3.5rem;
+  width: 92%;
+}
+.intrensic-form-box label,
+.lumpsum-form-box label,
+.sip-form-box label,.gain-form-box label {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+.intrensic-form-box label span,
+.lumpsum-form-box label span,
+.sip-form-box label span,.gain-form-box label span {
+  color: #f00;
+}
+.intrensic-form-box input:focus,
+.lumpsum-form-box input:focus,
+.sip-form-box input:focus,
+.sip-form-box select:focus,.gain-form-box input:focus {
+  border: 1px solid #80bdff;
+  box-shadow: 1px 1px 10px #80bdff;
+  outline: 1px solid #80bdff;
+}
+.btn {
+  padding: 0.8rem 3rem;
+  margin-right: 1rem;
+  background: #0054d1;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 10px #0054d1;
+}
+.btns {
+  display: flex;
+}
+.btn-intrensic-reset,
+.btn-lumpsum-reset,
+.btn-sip-reset,
+.btn-step-up-reset {
+  display: none;
+  margin-left: 1rem;
+}
+.intrensic-result,
+.lumpsum-result,
+.sip-result,.gain-result {
+  padding: 3rem;
+  width: 60%;
+  font-size: 2.5rem;
+}
+.lumpsum-result,
+.sip-result,.gain-result {
+  padding-top: 13rem;
+  font-size: 2rem;
+}
+.sip-result {
+  padding-top: 10rem;
+}
+.l-p,
+.s-p,.g-p {
+  margin-bottom: 1rem;
+}
+.lumpsum-result p,
+.sip-result p,.gain-result p {
+  display: none;
+}
+.lumpsum-result span,
+.sip-result span,.gain-result span {
+  display: none;
+}
+@media only screen and (max-width:480px){
+  .intrensic-calculator,
+  .lumpsum-calculator,
+  .sip-calculator,.gain-calculator{
+    flex-direction: column;
+  }
+  .intrensic-box,
+  .lumpsum-box,
+  .sip-box,.gain-box{
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .intrensic-form-box input, 
+  .lumpsum-form-box input, 
+  .sip-form-box input, 
+  .sip-form-box select,.gain-form-box input{
+    width: 95%;
+  }
+  .btns{
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .btn
+  {
+    font-size: 1.15rem;
+  }
+  .intrensic-label{
+    display: none;
+  }
+  .intrensic-value,.intrensic-label{
+    font-size: 2rem;
+  }
+  .intrensic-result{
+    display: none;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .lumpsum-result,.sip-result,.gain-result{
+    width: 80%;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .intrensic-title, .lumpsum-title, .sip-title,.gain-title {
+    font-size: 2.9rem;
+  }  
+  .lumpsum-box form,.gain-box form{
+    margin-top: 5rem;
+  }
+}

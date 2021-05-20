@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="./intrensic.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="sip-title title">SIP Calculator</h1>
+    <section class="sip-calculator">
+      <div class="box sip-box">
+        <form action="">
+          <div class="sip-form-box">
+            <label for="">Frequency of Investment:</label>
+            <select name="frequency" id="s-frequency">
+              <option value="Monthly" selected>Monthly</option>
+              <option value="Yearly" class="s-year">Yearly</option>
+            </select>
+          </div>
+          <div class="sip-form-box">
+            <label for="s-ia" class="s-ia">
+              SIP Investment Ammount <span>*</span>
+            </label>
+            <input type="number" id="s-ia" />
+          </div>
+          <div class="sip-form-box">
+            <label for="s-return">
+              Expected rate of return (P.A) <span>*</span>
+            </label>
+            <input type="number" id="s-return" />
+          </div>
+          <div class="sip-form-box">
+            <label for="s-tenure">Tenure (in years) <span>*</span> </label>
+            <input type="number" id="s-tenure" />
+          </div>
+        </form>
+        <div class="btns">
+          <button class="btn btn-sip-calculate">Plan My Future</button>
+          <button class="btn btn-sip-reset">Reset</button>
+        </div>
+      </div>
+      <div class="box sip-result">
+        <p class="sip-value s-p">Your Corpus Value: <span></span></p>
+        <p class="sip-earnings s-p">Total Earnings: <span></span></p>
+        <p class="sip-invested s-p">Total Deposited Amount: <span></span></p>
+        <span class="sip-result-span"></span>
+      </div>
+    </section>
+    <script src="./sip.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumpsum Calculator</title>
+    <link rel="stylesheet" href="./intrensic.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 class="lumpsum-title title">Lumpsum Calculator</h1>
+    <section class="lumpsum-calculator">
+      <div class="box lumpsum-box">
+        <form action="">
+          <div class="lumpsum-form-box">
+            <label for="l-ia" class="l-ia">
+              Investment Amount: <span>*</span>
+            </label>
+            <input type="number" id="l-ia" placeholder="Ex: ₹5000" />
+          </div>
+          <div class="lumpsum-form-box">
+            <label for="l-return" class="l-return">
+              Expected Rate of Return (P.A): <span>*</span>
+            </label>
+            <input type="number" id="l-return" placeholder="Ex: 15%" />
+          </div>
+          <div class="lumpsum-form-box">
+            <label for="l-tenure" class="l-tenure">
+              Tenure: <span>*</span>
+            </label>
+            <input type="number" id="l-tenure" placeholder="Ex: 5 Years" />
+          </div>
+        </form>
+        <div class="btns">
+          <button class="btn btn-lumpsum-calculate">Plan My Future</button>
+          <button class="btn btn-lumpsum-reset">Reset</button>
+        </div>
+      </div>
+      <div class="box lumpsum-result">
+        <p class="lumpsum-value l-p">Your Corpus Value: <span></span></p>
+        <p class="lumpsum-earnings l-p">Total Earnings: <span></span></p>
+        <p class="lumpsum-invested l-p">
+          Total Deposited Amount: <span></span>
+        </p>
+        <span class="lumpsum-result-span"></span>
+      </div>
+    </section>
+    <script src="./lumpsum.js"></script>
+  </body>
+</html>
